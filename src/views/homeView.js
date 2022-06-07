@@ -1,8 +1,8 @@
 
-import createAddFoodButtonView from "./MealList/addFoodButtonView.js";
-import createEditView from "./MealList/editView.js";
-import createTotalView from "./MealList/totalView.js";
-import createFoodListView from "./MealList/foodListView.js";
+import createAddFoodButtonView from "./FoodList/addFoodButtonView.js";
+import createEditView from "./FoodList/editView.js";
+import createTotalView from "./FoodList/totalView.js";
+import createFoodListView from "./FoodList/foodListView.js";
 import createSearchView from "./Search/searchView.js";
 import countTotalValue from "../utils/countTotalValue.js";
 
