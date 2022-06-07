@@ -1,0 +1,21 @@
+@use "../../sass-utils/colors";
+@use "../../sass-utils/fonts";
+
+.button{
+    padding: 12px;
+    border-radius: 8px;
+    @include fonts.body;
+    min-width: 100px;
+    border: none;
+    cursor: pointer;
+
+    &--default{
+        background-color: colors.$active;
+        color: white;
+    }
+
+    &--pale{
+        background-color: colors.$active-a20;
+        color: colors.$active;
+    }
+}

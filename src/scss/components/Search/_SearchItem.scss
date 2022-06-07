@@ -1,0 +1,44 @@
+@use "../../sass-utils/colors";
+@use "../../sass-utils/fonts";
+
+.search-results {
+    padding: 12px 24px;
+    border-radius: 16px;
+    border: 1px solid colors.$black-a12;
+}
+
+.search-result {
+    padding: 12px 24px 16px;
+    border-radius: 12px;
+    border: 1px solid colors.$black-a12;
+    margin: 12px 0;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color .2s ease-out;
+    
+    &:hover{
+        background-color: colors.$black-a08;
+    }
+
+    &__header {
+        padding-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__desc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title,
+    &__cal {
+        @include fonts.large;
+    }
+
+    &__brands,
+    &__per {
+        @include fonts.small;
+        color: colors.$black-a60;
+    }
+}

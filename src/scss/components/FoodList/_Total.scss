@@ -1,0 +1,15 @@
+@use "../../sass-utils/colors";
+
+#total-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid colors.$black-a12;
+    background-color: white;
+}
+.total {
+    width: 770px;
+    margin: 12px auto;
+    padding: 8px 12px;
+}

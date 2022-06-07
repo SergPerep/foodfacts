@@ -1,0 +1,35 @@
+@use "../../sass-utils/colors";
+@use "../../sass-utils/fonts";
+
+.food {
+    padding: 16px 12px;
+    background-color: white;
+    border-bottom: 1px solid colors.$black-a12;
+
+    &:hover{
+        .food__delete-button{
+            display: flex;
+        }
+        .food__amount{
+            display: none;
+        }
+    }
+
+    &__header {
+        @include fonts.large;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+    }
+
+    &__delete-button{
+        display: none;
+        height: 28px;
+        width: 28px;
+        border-radius: 14px;
+        color: colors.$danger;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+}

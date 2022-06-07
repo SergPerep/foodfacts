@@ -1,0 +1,31 @@
+@use "../../sass-utils/fonts";
+@use "../../sass-utils/colors";
+
+.food-value {
+    width: 88px;
+    &__title {
+        @include fonts.small;
+        text-transform: uppercase;
+        color: colors.$black-a60;
+        padding-bottom: 4px;
+    }
+    &__desc {
+        @include fonts.body;
+    }
+}
+
+.food-values {
+    display: flex;
+    justify-content: space-between;
+    .nutrients {
+        display: flex;
+        .food-value:not(:first-child) {
+            margin-left: 12px;
+        }
+    }
+    .calories{
+        .food-value{
+            text-align: right;
+        }
+    }
+}

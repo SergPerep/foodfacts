@@ -1,0 +1,20 @@
+@use "../../sass-utils/colors";
+@use "../../sass-utils/fonts";
+
+.add-food-button{
+    background-color: colors.$active-a20;
+    color: colors.$active;
+    border-radius: 8px;
+    // border: 1px solid colors.$black-a12;
+    padding: 8px;
+    cursor: pointer;
+    &:hover{
+        background-color: colors.$active-a30;
+    }
+}
+
+.add-food-icon{
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+}

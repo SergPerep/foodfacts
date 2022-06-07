@@ -1,0 +1,33 @@
+@use "../../sass-utils/colors";
+@use "../../sass-utils/fonts";
+
+.edit {
+    margin: 12px 0;
+    padding: 24px;
+    border: 1px solid colors.$black-a12;
+    border-radius: 16px;
+    background-color: white;
+
+    &__title {
+        @include fonts.xlarge;
+    }
+
+    &__input {
+        border: 1px solid colors.$black-a12;
+        border-radius: 12px;
+        background-color: colors.$black-a04;
+        @include fonts.body;
+        padding: 8px 12px;
+        width: 100%;
+        margin: 16px 0 16px;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: end;
+        padding-top: 12px;
+        .button {
+            margin-left: 12px;
+        }
+    }
+}

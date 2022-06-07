@@ -1,37 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="apple-touch-icon" href="./public/hyf.png" />
-    <link rel="shortcut icon" type="image/png" href="./public/hyf.png" />
-    <title>Vanilla Starter</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./public/style.css" />
-    <link rel="stylesheet" href="./public/nobelprize.css" />
-    <link rel="stylesheet" href="./public/stopwatch.css" />
-    <link rel="stylesheet" href="./public/pokemons.css" />
-    <link rel="stylesheet" href="./public/exchangerate.css" />
-  </head>
-  <body>
-    <div id="app-root"></div>
-    <script src="./src/index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="apple-touch-icon" href="./public/hyf.png" />
+  <link rel="shortcut icon" type="image/png" href="./public/hyf.png" />
+  <title>Vanilla Starter</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- <link rel="stylesheet" href="./public/style.css" />
+  <link rel="stylesheet" href="./public/nobelprize.css" />
+  <link rel="stylesheet" href="./public/stopwatch.css" />
+  <link rel="stylesheet" href="./public/pokemons.css" />
+  <link rel="stylesheet" href="./public/exchangerate.css" /> -->
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+
+<body>
+  <div id="app-root">
+    <!--
+    <div class="container">
+      <div class="search-results">
+        <div class="search">
+          <div class="search__icon">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+          <input type="text" class="search__input" placeholder="Search...">
+          <div class="search__loader">
+            <svg class="loader" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+              <g class="spinner">
+                <circle class="spinner-line" cy="24" cx="24" />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="search-result">
+          <div class="search-result__header">
+            <span class="search-result__title">Chocomel</span>
+            <span class="search-result__cal">490cal</span>
+          </div>
+          <div class="search-result__desc">
+            <span class="search-result__brands">Campina</span>
+            <span class="search-result__per">100g</span>
+          </div>
+        </div>
+        <div class="search-result">
+          <div class="search-result__header">
+            <span class="search-result__title">Chocomel</span>
+            <span class="search-result__cal">490cal</span>
+          </div>
+          <div class="search-result__desc">
+            <span class="search-result__brands">Campina</span>
+            <span class="search-result__per">100g</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input id="search-input" />
+    <button id="search-button">Search</button>
+    <ul id="results"></ul>
+    -->
+  </div>
+  <!--
+  <div class="container">
+    <div class="add-food-button">
+      <div class="add-food-icon">
+        <span class="material-symbols-outlined">
+          add
+        </span>
+      </div>
+    </div>
+    <form class="edit">
+      <div class="edit__title">White rice</div>
+      <input type="number" class="edit__input">
+      <div class="food-values">
+        <div class="nutrients">
+          <div class="food-value">
+            <div class="food-value__title">Protein</div>
+            <div class="food-value__desc">0.7 g</div>
+          </div>
+          <div class="food-value">
+            <div class="food-value__title">Carbs</div>
+            <div class="food-value__desc">69.75 g</div>
+          </div>
+          <div class="food-value">
+            <div class="food-value__title">Fats</div>
+            <div class="food-value__desc">6.65 g</div>
+          </div>
+        </div>
+
+        <div class="calories">
+          <div class="food-value">
+            <div class="food-value__title">Calories</div>
+            <div class="food-value__desc">322 cal</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="button button--pale">Cancel</button>
+        <button class="button button--default">Save</button>
+      </div>
+    </form>
+    <div class="food">
+      <div class="food__header">
+        <div class="food__title">White rice</div>
+        <div class="food__amount">250 g</div>
+      </div>
+
+      <div class="food-values">
+        <div class="nutrients">
+          <div class="food-value">
+            <div class="food-value__title">Protein</div>
+            <div class="food-value__desc">0.7 g</div>
+          </div>
+          <div class="food-value">
+            <div class="food-value__title">Carbs</div>
+            <div class="food-value__desc">69.75 g</div>
+          </div>
+          <div class="food-value">
+            <div class="food-value__title">Fats</div>
+            <div class="food-value__desc">6.65 g</div>
+          </div>
+        </div>
+
+        <div class="calories">
+          <div class="food-value">
+            <div class="food-value__title">Calories</div>
+            <div class="food-value__desc">322 cal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="total">
+      <div class="food-values">
+        <div class="nutrients">
+          <div class="food-value">
+            <div class="food-value__title">Protein</div>
+            <div class="food-value__desc">0.7 g</div>
+          </div>
+          <div class="food-value">
+            <div class="food-value__title">Carbs</div>
+            <div class="food-value__desc">69.75 g</div>
+          </div>
+          <div class="food-value">
+            <div class="food-value__title">Fats</div>
+            <div class="food-value__desc">6.65 g</div>
+          </div>
+        </div>
+
+        <div class="calories">
+          <div class="food-value">
+            <div class="food-value__title">Calories</div>
+            <div class="food-value__desc">322 cal</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+  <script src="./src/index.js" type="module"></script>
+</body>
+
 </html>

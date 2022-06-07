@@ -16,7 +16,7 @@ function createHomePage() {
   const viewProps = { onIncrement, onDecrement };
   const view = createHomeView(viewProps);
 
-  view.update(state);
+  // view.update(state);
 
   return view;
 }

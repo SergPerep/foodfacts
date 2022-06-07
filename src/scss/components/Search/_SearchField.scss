@@ -1,0 +1,46 @@
+@use "../../sass-utils/colors";
+@use "../../sass-utils/fonts";
+
+.search-field{
+    display: flex;
+    border: 1px solid colors.$black-a12;
+    border-radius: 24px;
+    background-color: colors.$black-a04;
+    padding: 0 4px;
+    margin: 12px 0 16px;
+
+    &__icon{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: colors.$black-a12;
+        span{
+            display: block;
+            line-height: 24px;
+        }
+    }
+
+    &__input{
+        padding: 10px 0;
+        background-color: transparent;
+        border: none;
+        width: calc(100% - 44px - 44px);
+        @include fonts.body;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__spinner{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    svg.loader{
+        width: 24px;
+        height: 24px;
+    }
+}

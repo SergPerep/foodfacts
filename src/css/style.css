@@ -1,0 +1,368 @@
+/* Default browser styles reset*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+h6 {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+/* Box-sizing reset method*/
+html,
+body,
+input,
+button,
+div {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Lists reset*/
+ul {
+  padding-left: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+/* Links style reset */
+a {
+  text-decoration: none;
+}
+
+/* Set divs to have border-box */
+div {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 770px;
+  margin: 24px auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.button {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  min-width: 100px;
+  border: none;
+  cursor: pointer;
+}
+.button--default {
+  background-color: #5CB86E;
+  color: white;
+}
+.button--pale {
+  background-color: rgba(92, 184, 110, 0.2);
+  color: #5CB86E;
+}
+
+svg.loader {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+svg.loader .spinner-line {
+  r: 18px;
+  stroke-width: 4px;
+  stroke: #5CB86E;
+  fill: none;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+  animation: expanding 1.4s ease-in-out infinite;
+}
+svg.loader .spinner {
+  transform-origin: 50% 50%;
+  animation: spinning 1.4s linear infinite;
+}
+
+@keyframes expanding {
+  0%, 100% {
+    stroke-dasharray: 6.28px, 106.76px;
+  }
+  50% {
+    stroke-dasharray: 87.92px, 106.76px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -81.64px;
+  }
+  0% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 770px;
+  margin: 24px auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.search-wrapper {
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px 24px;
+  margin: 48px 0;
+}
+
+.search-results {
+  padding: 12px 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(51, 51, 50, 0.12);
+}
+
+.search-result {
+  padding: 12px 24px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(51, 51, 50, 0.12);
+  margin: 12px 0;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.2s ease-out;
+}
+.search-result:hover {
+  background-color: rgba(51, 51, 50, 0.08);
+}
+.search-result__header {
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.search-result__desc {
+  display: flex;
+  justify-content: space-between;
+}
+.search-result__title, .search-result__cal {
+  font-size: 18px;
+  line-height: 28px;
+}
+.search-result__brands, .search-result__per {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(51, 51, 50, 0.6);
+}
+
+.search-field {
+  display: flex;
+  border: 1px solid rgba(51, 51, 50, 0.12);
+  border-radius: 24px;
+  background-color: rgba(51, 51, 50, 0.04);
+  padding: 0 4px;
+  margin: 12px 0 16px;
+}
+.search-field__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-field__icon span {
+  display: block;
+  line-height: 24px;
+}
+.search-field__input {
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  width: calc(100% - 44px - 44px);
+  font-size: 16px;
+  line-height: 24px;
+}
+.search-field__input:focus {
+  outline: none;
+}
+.search-field__spinner {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-field svg.loader {
+  width: 24px;
+  height: 24px;
+}
+
+.food {
+  padding: 16px 12px;
+  background-color: white;
+  border-bottom: 1px solid rgba(51, 51, 50, 0.12);
+}
+.food:hover .food__delete-button {
+  display: flex;
+}
+.food:hover .food__amount {
+  display: none;
+}
+.food__header {
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.food__delete-button {
+  display: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 14px;
+  color: #e44232;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-value {
+  width: 88px;
+}
+.food-value__title {
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 50, 0.6);
+  padding-bottom: 4px;
+}
+.food-value__desc {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.food-values {
+  display: flex;
+  justify-content: space-between;
+}
+.food-values .nutrients {
+  display: flex;
+}
+.food-values .nutrients .food-value:not(:first-child) {
+  margin-left: 12px;
+}
+.food-values .calories .food-value {
+  text-align: right;
+}
+
+#total-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid rgba(51, 51, 50, 0.12);
+  background-color: white;
+}
+
+.total {
+  width: 770px;
+  margin: 12px auto;
+  padding: 8px 12px;
+}
+
+.edit {
+  margin: 12px 0;
+  padding: 24px;
+  border: 1px solid rgba(51, 51, 50, 0.12);
+  border-radius: 16px;
+  background-color: white;
+}
+.edit__title {
+  font-size: 24px;
+  line-height: 32px;
+}
+.edit__input {
+  border: 1px solid rgba(51, 51, 50, 0.12);
+  border-radius: 12px;
+  background-color: rgba(51, 51, 50, 0.04);
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 12px;
+  width: 100%;
+  margin: 16px 0 16px;
+}
+.edit .btn-group {
+  display: flex;
+  justify-content: end;
+  padding-top: 12px;
+}
+.edit .btn-group .button {
+  margin-left: 12px;
+}
+
+.add-food-button {
+  background-color: rgba(92, 184, 110, 0.2);
+  color: #5CB86E;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+.add-food-button:hover {
+  background-color: rgba(92, 184, 110, 0.3);
+}
+
+.add-food-icon {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+}
+
+.overlay {
+  background-color: rgba(51, 51, 50, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.overlay.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
