@@ -2,7 +2,7 @@ import createElement from "../../utils/createElement.js";
 import createSearchSpinnerView from "./searchSpinner.js";
 
 const createSearchFieldView = ({ onInputChange }) => {
-    const placeholder = "Search food product..."
+    const placeholder = "Search food product... e.g. Nutella";
     const root = createElement({
         tagName: "div",
         className: "search-field"
@@ -11,7 +11,7 @@ const createSearchFieldView = ({ onInputChange }) => {
         <div class="search-field__icon">
             <span class="material-symbols-outlined">search</span>
         </div>
-        <input type="text" class="search-field__input" placeholder=${placeholder} value="">
+        <input type="text" class="search-field__input" placeholder="${placeholder}" value="">
         <div class="spinner-container"></div>
     `;
     const spinnerContainer = root.querySelector(".spinner-container");
