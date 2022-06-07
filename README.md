@@ -28,5 +28,5 @@ $ npm install
 
 To watch and compile scss files use
 ```bash
-$ npm sass
+$ npm run sass
 ```
