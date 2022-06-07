@@ -27,42 +27,7 @@ function createHomeView() {
   const foodListContainer = root.querySelector("#food-list-container");
   const totalContainer = root.querySelector("#total-container");
 
-  let foodList = [
-    {
-      id: 1,
-      titleStr: "White rice",
-      amountNum: 240,
-      per100: {
-        proteinNum: 4,
-        carbsNum: 21,
-        fatNum: 43,
-        energyNum: 140
-      },
-      total: {
-        proteinNum: 4 * 240 / 100,
-        carbsNum: 21 * 240 / 100,
-        fatNum: 43 * 240 / 100,
-        energyNum: 149 * 240 / 100
-      }
-    },
-    {
-      id: 2,
-      titleStr: "Chocomel",
-      amountNum: 150,
-      per100: {
-        proteinNum: 23,
-        carbsNum: 34,
-        fatNum: 12,
-        energyNum: 200,
-      },
-      total: {
-        proteinNum: 23 * 150 / 100,
-        carbsNum: 34 * 150 / 100,
-        fatNum: 12 * 150 / 100,
-        energyNum: 200 * 150 / 100,
-      }
-    }
-  ];
+  let foodList = [];
 
   /*======= ADD FOOD BUTTON ======*/
 
