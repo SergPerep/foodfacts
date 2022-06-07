@@ -31,16 +31,21 @@ const createSearchView = ({ onResultClick, onOverlayClick }) => {
     searchWrapper.appendChild(searchResultsView.root);
 
     /*======= SEARCH FIELD =======*/
-
-    const onInputChange = async (e) => {
+    let timeout = 0;
+    const onInputChange = (e) => {
+        const delay = 500;
         searchFieldView.update({ isSpinnerVisible: true });
-        const fetchedData = await getSearchResults({ searchInputValue: e.target.value });
-        if (fetchedData.error) {
-            searchResultsView.update({ error: fetchedData.error });
-        } else {
-            searchResultsView.update({ results: fetchedData.searchResults, onResultClick });
-        }
-        searchFieldView.update({ isSpinnerVisible: false });
+        clearTimeout(timeout);
+        timeout = setTimeout(async () => {
+            const fetchedData = await getSearchResults({ searchInputValue: e.target.value });
+            console.log(e.target.value);
+            if (fetchedData.error) {
+                searchResultsView.update({ error: fetchedData.error });
+            } else {
+                searchResultsView.update({ results: fetchedData.searchResults, onResultClick });
+            }
+            searchFieldView.update({ isSpinnerVisible: false });
+        }, delay)
     }
 
     const searchFieldView = createSearchFieldView({ onInputChange });
