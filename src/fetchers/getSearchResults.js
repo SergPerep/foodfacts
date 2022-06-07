@@ -17,17 +17,11 @@ const getSearchResults = async ({ searchInputValue }) => {
             }
             return result;
         })
-        // product_name
-        // brands
-        // nutriments.proteins
-        // nutriments.carbohydrates
-        // nutriments.fat
-        // nutriments.energy-kcal
-        // quantity
 
-        return searchResults;
+        return { searchResults };
     } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
+        return { error };
     }
 }
 

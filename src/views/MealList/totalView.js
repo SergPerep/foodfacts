@@ -4,8 +4,6 @@ import countMealValues from "../../utils/countMealValues.js";
 
 const createTotalView = ({ foodList }) => {
 
-
-
     const root = createElement({
         tagName: "div",
         className: "total"

@@ -233,6 +233,15 @@ h1 {
   height: 24px;
 }
 
+.search-error-message {
+  border-radius: 12px;
+  color: #e44232;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px;
+}
+
 .food {
   padding: 16px 12px;
   background-color: white;

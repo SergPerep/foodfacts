@@ -1,0 +1,10 @@
+@use "../../sass-utils/colors";
+@use "../../sass-utils/fonts";
+
+.search-error-message {
+    border-radius: 12px;
+    color: colors.$danger;
+    text-align: center;
+    @include fonts.body;
+    padding: 16px;
+}

@@ -34,8 +34,12 @@ const createSearchView = ({ onResultClick, onOverlayClick }) => {
 
     const onInputChange = async (e) => {
         searchFieldView.update({ isSpinnerVisible: true });
-        const searchResult = await getSearchResults({ searchInputValue: e.target.value });
-        searchResultsView.update({ results: searchResult, onResultClick });
+        const fetchedData = await getSearchResults({ searchInputValue: e.target.value });
+        if (fetchedData.error) {
+            searchResultsView.update({ error: fetchedData.error });
+        } else {
+            searchResultsView.update({ results: fetchedData.searchResults, onResultClick });
+        }
         searchFieldView.update({ isSpinnerVisible: false });
     }
 
