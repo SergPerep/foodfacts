@@ -48,7 +48,6 @@ const createFoodValuesView = ({
     caloriesEl.appendChild(energyView.root);
 
     const update = (state) => {
-        // console.log({ state });
         proteinView.update(state.proteinNum);
         carbsView.update(state.carbsNum);
         fatView.update(state.fatNum);

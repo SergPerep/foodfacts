@@ -38,7 +38,6 @@ const createEditView = ({ result, onEditInput, onEditCancelClick, onEditSaveClic
 
     editInputEl.addEventListener("input", (e) => {
         const foodValues = onEditInput(e);
-        // console.log(foodValues);
 
         foodValuesView.update(foodValues);
     })

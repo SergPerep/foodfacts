@@ -1,4 +1,4 @@
-# BiteMe
+# FoodFacts
 Nutrition calculator built using Open Food Facts API.
 
 I plan to build a one-page app that calculates nutrition values (calories, proteins, fats and carbohydrates) of the meal using Open Food Facts API.

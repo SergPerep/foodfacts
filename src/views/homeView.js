@@ -4,7 +4,6 @@ import createEditView from "./MealList/editView.js";
 import createTotalView from "./MealList/totalView.js";
 import createFoodListView from "./MealList/foodListView.js";
 import createSearchView from "./Search/searchView.js";
-import debounce from "../utils/debounce.js";
 import countTotalValue from "../utils/countTotalValue.js";
 
 function createHomeView() {
@@ -165,12 +164,6 @@ function createHomeView() {
   /*======= SEARCH =======*/
 
   let isSearchOpen = false;
-
-  // const logDebounce = debounce(message => console.log(message));
-  // const onInputChange = async (e) => {
-  //     state.searchResult = await getSearchResults({ searchInputValue: e.target.value });
-  //     console.log(state);
-  // }
 
   const onResultClick = (result) => {
     selectedResult = result;
